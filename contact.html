@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Client Website - About Us/Contact</title>
+  <title>Blue Ridge Goods - About Us/Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>About Us and Contact</h1>
+  <div class="brand">
+    <div class="logo">BR</div>
+    <div>
+      <h1>About Us and Contact</h1>
+      <p class="tagline">Get to know our business or send a request.</p>
+    </div>
+  </div>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
-    <a href="contact.html">About Us/Contact</a>
+    <a class="active" href="contact.html">About Us/Contact</a>
     <a href="custom.html">Events</a>
   </nav>
 </header>
 
 <main>
-  <h2>About Us</h2>
-  <p>We are a local business focused on offering quality products and a positive customer experience.</p>
+  <section class="grid">
+    <article class="card">
+      <h2>About Us</h2>
+      <p>Blue Ridge Goods is a local business focused on quality products, custom gifts, and a positive customer experience.</p>
+      <p>We believe shopping locally should feel personal, welcoming, and easy.</p>
+    </article>
 
-  <h2>Contact Form</h2>
+    <article class="card">
+      <h2>Contact Form</h2>
 
-  <form>
-    <label>Name:</label><br>
-    <input type="text" name="name"><br><br>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
 
-    <label>Email:</label><br>
-    <input type="email" name="email"><br><br>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
 
-    <label>Message or Custom Order Request:</label><br>
-    <textarea name="message" rows="5" cols="40"></textarea><br><br>
+        <label for="message">Message or Custom Order Request</label>
+        <textarea id="message" name="message" rows="5"></textarea>
 
-    <input type="submit" value="Submit">
-  </form>
+        <input type="submit" value="Submit">
+      </form>
+    </article>
+  </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 Client Name. All rights reserved.</p>
+  <p>&copy; 2026 Blue Ridge Goods. All rights reserved.</p>
 </footer>
 
 </body>

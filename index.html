@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Client Website - Home</title>
+  <title>Blue Ridge Goods - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Client Logo" width="150">
-  <h1>Client Name</h1>
+  <div class="brand">
+    <div class="logo">BR</div>
+    <div>
+      <h1>Blue Ridge Goods</h1>
+      <p class="tagline">Local gifts, handmade decor, and friendly service.</p>
+    </div>
+  </div>
 
   <nav>
-    <a href="index.html">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">About Us/Contact</a>
     <a href="custom.html">Events</a>
@@ -18,15 +24,31 @@
 </header>
 
 <main>
-  <h2>Welcome</h2>
-  <p>Welcome to our website. We offer high-quality products and services for our customers.</p>
+  <section class="hero">
+    <h2>Thoughtful gifts made for everyday moments.</h2>
+    <p>Blue Ridge Goods is a small local shop offering handmade home decor, gift baskets, candles, and custom items for customers in the community.</p>
+  </section>
 
-  <h2>About Our Business</h2>
-  <p>Our goal is to provide great customer service and products that meet the needs of our community.</p>
+  <section class="grid">
+    <article class="card">
+      <h3>Handmade Products</h3>
+      <p>Each item is selected or created with care, so customers can find something personal and useful.</p>
+    </article>
+
+    <article class="card">
+      <h3>Custom Orders</h3>
+      <p>We help customers create custom gifts for birthdays, holidays, school events, and special occasions.</p>
+    </article>
+
+    <article class="card">
+      <h3>Community Focus</h3>
+      <p>Our goal is to support local shoppers with friendly service and products that feel connected to home.</p>
+    </article>
+  </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 Client Name. All rights reserved.</p>
+  <p>&copy; 2026 Blue Ridge Goods. All rights reserved.</p>
 </footer>
 
 </body>
