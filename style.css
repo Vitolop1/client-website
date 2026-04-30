@@ -5,13 +5,13 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #24313d;
-  background: #f6f2ea;
+  color: #17253f;
+  background: #f4f6f8;
   line-height: 1.6;
 }
 
 header {
-  background: #274c43;
+  background: #17253f;
   color: white;
   padding: 22px 8%;
 }
@@ -26,13 +26,11 @@ header {
 .logo {
   width: 54px;
   height: 54px;
-  display: grid;
-  place-items: center;
+  display: block;
   border-radius: 8px;
-  background: #f4c95d;
-  color: #274c43;
-  font-size: 26px;
-  font-weight: bold;
+  background: white;
+  object-fit: contain;
+  padding: 5px;
 }
 
 h1,
@@ -49,7 +47,7 @@ h1 {
 
 .tagline {
   margin: 0;
-  color: #dce8df;
+  color: #dbe4ef;
 }
 
 nav {
@@ -68,8 +66,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background: #f4c95d;
-  color: #274c43;
+  background: #d62828;
+  color: white;
 }
 
 main {
@@ -88,7 +86,7 @@ main {
 .hero h2 {
   font-size: 36px;
   line-height: 1.15;
-  color: #274c43;
+  color: #17253f;
 }
 
 .grid {
@@ -109,19 +107,19 @@ main {
   height: 150px;
   border-radius: 8px;
   margin-bottom: 16px;
-  background: linear-gradient(135deg, #f4c95d, #7aa095);
+  background: linear-gradient(135deg, #17253f, #39b54a);
 }
 
-.product-art.basket {
-  background: linear-gradient(135deg, #d46a5b, #f4c95d);
+.product-art.training {
+  background: linear-gradient(135deg, #d62828, #17253f);
 }
 
 .product-art.candle {
-  background: linear-gradient(135deg, #7aa095, #f6f2ea);
+  background: linear-gradient(135deg, #39b54a, #f4f6f8);
 }
 
 .price {
-  color: #5f746d;
+  color: #1d7f33;
   font-weight: bold;
 }
 
@@ -129,7 +127,7 @@ button,
 input[type="submit"] {
   border: 0;
   border-radius: 6px;
-  background: #274c43;
+  background: #d62828;
   color: white;
   padding: 10px 16px;
   font-weight: bold;
@@ -138,7 +136,7 @@ input[type="submit"] {
 
 button:hover,
 input[type="submit"]:hover {
-  background: #1d3932;
+  background: #a61f1f;
 }
 
 .footer-content {
@@ -214,16 +212,16 @@ input[type="submit"]:hover {
 }
 
 .cart-total {
-  color: #274c43;
+  color: #17253f;
   font-weight: bold;
 }
 
 .secondary-button {
-  background: #7aa095;
+  background: #17253f;
 }
 
 .secondary-button:hover {
-  background: #5f8278;
+  background: #0f1a2d;
 }
 
 form {
@@ -247,7 +245,7 @@ textarea {
 footer {
   text-align: center;
   padding: 22px;
-  background: #24313d;
+  background: #111827;
   color: white;
 }
 

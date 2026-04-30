@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var cartItems = document.getElementById("cart-items");
   var cartTotal = document.getElementById("cart-total");
   var contactForm = document.getElementById("contact-form");
-  var cartStorageKey = "blueRidgeCart";
-  var customOrdersStorageKey = "blueRidgeCustomOrders";
+  var cartStorageKey = "ironPulseCart";
+  var customOrdersStorageKey = "ironPulseCustomRequests";
 
   function getStoredList(storage, key) {
     try {
