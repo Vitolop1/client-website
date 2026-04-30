@@ -12,8 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
   var cartStorageKey = "blueRidgeCart";
   var customOrdersStorageKey = "blueRidgeCustomOrders";
 
+  function getStoredList(storage, key) {
+    try {
+      return JSON.parse(storage.getItem(key)) || [];
+    } catch (error) {
+      storage.removeItem(key);
+      return [];
+    }
+  }
+
   function getCartItems() {
-    return JSON.parse(sessionStorage.getItem(cartStorageKey)) || [];
+    return getStoredList(sessionStorage, cartStorageKey);
   }
 
   function saveCartItems(items) {
@@ -112,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (contactForm) {
     contactForm.addEventListener("submit", function (event) {
-      var savedOrders = JSON.parse(localStorage.getItem(customOrdersStorageKey)) || [];
+      var savedOrders = getStoredList(localStorage, customOrdersStorageKey);
       var customOrder = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
