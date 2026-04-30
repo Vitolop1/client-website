@@ -8,9 +8,9 @@ Final Program Share Link from the IDE: https://github.com/Vitolop1/client-websit
 
 ## Introduction
 
-Client name: Iron Pulse Fitness Gym
+Client name: ABC Fitness Studio
 
-This report presents the final website for Iron Pulse Fitness Gym, a small fitness business focused on strength training, personal coaching, and member engagement. The website includes a Home page, Gallery page, About Us/Contact page, and a custom Classes and Events page. The purpose of the site is to promote gym services, encourage visitors to learn about membership options, and make it easy for potential customers to contact the gym.
+This report presents the final website for ABC Fitness Studio, a small fitness business focused on strength training, personal coaching, and member engagement. The website includes a Home page, Gallery page, About Us/Contact page, and a custom Classes and Events page. The purpose of the site is to promote gym services, encourage visitors to learn about membership options, and make it easy for potential customers to contact the gym.
 
 The selected logo is a barbell icon, which clearly communicates strength, training, and fitness. The color palette uses dark navy, red, green, white, and light gray. Dark navy creates a professional and strong brand identity, red communicates energy and intensity, green suggests health and progress, and the light background improves readability.
 
@@ -28,7 +28,7 @@ The website uses a consistent structure across all four pages. Each page include
 
 1. Home Page: https://vitolop1.github.io/client-website/
 
-The Home page introduces Iron Pulse Fitness Gym and explains the gym's focus on strength, coaching, and member support. It includes a hero section and three information cards for training programs, personal coaching, and member community.
+The Home page introduces ABC Fitness Studio and explains the gym's focus on strength, coaching, and member support. It includes a hero section and three information cards for training programs, personal coaching, and member community.
 
 2. Gallery Page: https://vitolop1.github.io/client-website/gallery.html
 
@@ -46,7 +46,7 @@ The custom page is a Classes and Events page. It includes information about grou
 
 ### Overall Design
 
-The website design follows the strong and energetic theme of Iron Pulse Fitness Gym. The header uses dark navy with white text to create contrast and a professional look. Red is used for active navigation states and primary buttons because it suggests energy and motivation. Green is used in visual accents and pricing to connect the design to health and progress. The body uses a light gray background with white cards, making the content easy to scan and read.
+The website design follows the strong and energetic theme of ABC Fitness Studio. The header uses dark navy with white text to create contrast and a professional look. Red is used for active navigation states and primary buttons because it suggests energy and motivation. Green is used in visual accents and pricing to connect the design to health and progress. The body uses a light gray background with white cards, making the content easy to scan and read.
 
 The layout is consistent across pages. The navigation bar, header, footer, buttons, cards, and forms all use the same styling rules from the shared CSS file. This creates a unified user experience and makes the website feel like one complete business site.
 
@@ -88,15 +88,15 @@ The website uses web storage to support the shopping cart and contact form featu
 
 ### Shopping Cart Feature
 
-The shopping cart uses sessionStorage. When a user clicks Add to Cart, the selected service name and price are saved under the key `ironPulseCart`. When the user clicks View Cart, JavaScript retrieves the stored cart data from sessionStorage and displays it in the cart modal. The Clear Cart and Process Order buttons remove the cart data from sessionStorage. This is appropriate because shopping cart data only needs to last during the current browsing session.
+The shopping cart uses sessionStorage. When a user clicks Add to Cart, the selected service name and price are saved under the key `abcFitnessCart`. When the user clicks View Cart, JavaScript retrieves the stored cart data from sessionStorage and displays it in the cart modal. The Clear Cart and Process Order buttons remove the cart data from sessionStorage. This is appropriate because shopping cart data only needs to last during the current browsing session.
 
 ### Contact Us Feature
 
-The Contact Us feature uses localStorage. When the user submits the form, JavaScript saves the user's name, email, message, and submission time under the key `ironPulseCustomRequests`. localStorage is used because the submitted information remains available after a page refresh or browser restart.
+The Contact Us feature uses localStorage. When the user submits the form, JavaScript saves the user's name, email, message, and submission time under the key `abcFitnessCustomRequests`. localStorage is used because the submitted information remains available after a page refresh or browser restart.
 
 ## Customization
 
-The custom fourth page is the Classes and Events page. This page supports the gym's engagement goal by showing community events, group workouts, fitness challenges, and testimonials. It relates to the rest of the site because it encourages visitors to see Iron Pulse Fitness Gym as more than a place to work out; it presents the gym as a supportive fitness community.
+The custom fourth page is the Classes and Events page. This page supports the gym's engagement goal by showing community events, group workouts, fitness challenges, and testimonials. It relates to the rest of the site because it encourages visitors to see ABC Fitness Studio as more than a place to work out; it presents the gym as a supportive fitness community.
 
 ## Screenshots of Rendered Webpages
 
@@ -122,15 +122,15 @@ Shopping cart - Process Order after already processed: Insert screenshot of the 
 
 Shopping cart - Clear Cart empty cart: Insert screenshot of the modal showing "Your shopping cart is empty."
 
-SessionStorage before processing order: Insert screenshot showing `ironPulseCart` in Session Storage.
+SessionStorage before processing order: Insert screenshot showing `abcFitnessCart` in Session Storage.
 
-SessionStorage after processing order: Insert screenshot showing that `ironPulseCart` has been removed.
+SessionStorage after processing order: Insert screenshot showing that `abcFitnessCart` has been removed.
 
 About Us page: Insert screenshot of the About Us/Contact page.
 
 Contact Us form: Insert screenshot of the completed contact form.
 
-LocalStorage after form submission: Insert screenshot showing `ironPulseCustomRequests` in Local Storage.
+LocalStorage after form submission: Insert screenshot showing `abcFitnessCustomRequests` in Local Storage.
 
 Contact Us form input validation: Insert screenshot after attempting to submit the form with required fields empty.
 
@@ -139,3 +139,4 @@ Custom Page: Insert screenshot of the Classes and Events page.
 ## Description of Issues
 
 During testing, I noticed that the Gallery page originally had repeated cart action buttons. I fixed this by keeping the View Cart button on the main Gallery page and placing the Clear Cart and Process Order buttons inside the shopping cart modal. I also updated the Subscribe feature so it uses a required email field and browser validation. After these corrections, the navigation, forms, alerts, sessionStorage, and localStorage features worked as expected.
+
