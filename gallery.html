@@ -32,7 +32,7 @@
         <h3>Mountain Mug Set</h3>
         <p>A cozy ceramic mug set inspired by the Blue Ridge area.</p>
         <p class="price">$24.99</p>
-        <button>Add to Cart</button>
+        <button class="add-to-cart-button" type="button">Add to Cart</button>
       </article>
 
       <article class="card">
@@ -40,7 +40,7 @@
         <h3>Custom Gift Basket</h3>
         <p>A personalized basket with snacks, candles, and small gifts.</p>
         <p class="price">$39.99</p>
-        <button>Add to Cart</button>
+        <button class="add-to-cart-button" type="button">Add to Cart</button>
       </article>
 
       <article class="card">
@@ -48,14 +48,26 @@
         <h3>Hand-Poured Candle</h3>
         <p>A clean, simple candle made for relaxing spaces at home.</p>
         <p class="price">$16.99</p>
-        <button>Add to Cart</button>
+        <button class="add-to-cart-button" type="button">Add to Cart</button>
       </article>
+  </section>
+
+  <section class="gallery-actions" aria-label="Cart actions">
+    <button id="clear-cart-button" class="secondary-button" type="button">Clear Cart</button>
+    <button id="process-order-button" type="button">Process Order</button>
   </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 Blue Ridge Goods. All rights reserved.</p>
+  <div class="footer-content">
+    <p>&copy; 2026 Blue Ridge Goods. All rights reserved.</p>
+    <div class="subscribe-form">
+      <input type="email" placeholder="Email address" aria-label="Email address">
+      <button class="subscribe-button" type="button">Subscribe</button>
+    </div>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

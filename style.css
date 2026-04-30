@@ -141,6 +141,40 @@ input[type="submit"]:hover {
   background: #1d3932;
 }
 
+.footer-content {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: min(460px, 100%);
+}
+
+.subscribe-form input {
+  flex: 1 1 220px;
+  border: 0;
+}
+
+.gallery-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.secondary-button {
+  background: #7aa095;
+}
+
+.secondary-button:hover {
+  background: #5f8278;
+}
+
 form {
   display: grid;
   gap: 12px;

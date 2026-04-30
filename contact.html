@@ -34,15 +34,15 @@
     <article class="card">
       <h2>Contact Form</h2>
 
-      <form>
+      <form id="contact-form">
         <label for="name">Name</label>
-        <input id="name" type="text" name="name">
+        <input id="name" type="text" name="name" required>
 
         <label for="email">Email</label>
-        <input id="email" type="email" name="email">
+        <input id="email" type="email" name="email" required>
 
         <label for="message">Message or Custom Order Request</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
         <input type="submit" value="Submit">
       </form>
@@ -51,8 +51,15 @@
 </main>
 
 <footer>
-  <p>&copy; 2026 Blue Ridge Goods. All rights reserved.</p>
+  <div class="footer-content">
+    <p>&copy; 2026 Blue Ridge Goods. All rights reserved.</p>
+    <div class="subscribe-form">
+      <input type="email" placeholder="Email address" aria-label="Email address">
+      <button class="subscribe-button" type="button">Subscribe</button>
+    </div>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
