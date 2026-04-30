@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var subscribeButtons = document.querySelectorAll(".subscribe-button");
   var addToCartButtons = document.querySelectorAll(".add-to-cart-button");
   var viewCartButton = document.getElementById("view-cart-button");
-  var clearCartButton = document.getElementById("clear-cart-button");
-  var processOrderButton = document.getElementById("process-order-button");
   var modalClearCartButton = document.getElementById("modal-clear-cart-button");
   var modalProcessOrderButton = document.getElementById("modal-process-order-button");
   var closeCartButton = document.getElementById("close-cart-button");
@@ -87,22 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (viewCartButton) {
     viewCartButton.addEventListener("click", function () {
       openCartModal();
-    });
-  }
-
-  if (clearCartButton) {
-    clearCartButton.addEventListener("click", function () {
-      clearCartItems();
-      renderCart();
-      alert("Cart cleared.");
-    });
-  }
-
-  if (processOrderButton) {
-    processOrderButton.addEventListener("click", function () {
-      clearCartItems();
-      renderCart();
-      alert("Thank you for your order.");
     });
   }
 
