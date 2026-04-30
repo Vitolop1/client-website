@@ -58,7 +58,7 @@ The website also uses browser-based validation for required fields. This helps u
 
 ### Responsive Web Design
 
-The website includes responsive design features. First, the main content width uses flexible sizing so the layout can adjust to different screen widths. Second, the card layout uses CSS Grid with `auto-fit` and `minmax`, allowing cards to move from multiple columns on desktop to fewer columns on smaller screens. Third, the navigation bar uses flexbox and wraps when the screen becomes narrow. A media query also reduces spacing and heading size on smaller screens so the layout remains readable on mobile devices.
+The website includes responsive design features. First, each page uses the viewport meta tag so mobile browsers render the pages at the correct device width. Second, the main content width uses flexible sizing so the layout can adjust to different screen widths. Third, the card layout uses CSS Grid with `auto-fit` and `minmax`, allowing cards to move from multiple columns on desktop to one column on smaller screens. The navigation changes into a compact grid on mobile, buttons expand to the full available width for easier tapping, and the cart modal uses mobile-friendly spacing so it stays readable on smaller screens.
 
 ## Website Functionality
 
