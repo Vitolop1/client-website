@@ -2,8 +2,15 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   color: #17253f;
   background: #f4f6f8;
@@ -78,6 +85,7 @@ nav a.active {
 }
 
 main {
+  flex: 1;
   width: min(1040px, 88%);
   margin: 0 auto;
   padding: 42px 0;
