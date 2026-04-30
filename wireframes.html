@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Fitness Studio Wireframes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #f2f2f2;
+    }
+
+    header {
+      padding: 24px;
+      text-align: center;
+      background: #222;
+      color: white;
+    }
+
+    main {
+      width: min(1180px, 94%);
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    .section-title {
+      margin: 30px 0 18px;
+      border-bottom: 2px solid #bbb;
+      padding-bottom: 8px;
+    }
+
+    .wireframe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+
+    .wireframe-card {
+      background: white;
+      border: 2px solid #333;
+      border-radius: 4px;
+      padding: 14px;
+      min-height: 520px;
+    }
+
+    .desktop-card {
+      min-height: 420px;
+    }
+
+    .label {
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .box {
+      display: grid;
+      place-items: center;
+      min-height: 46px;
+      margin-bottom: 10px;
+      border: 2px dashed #777;
+      background: #eee;
+      padding: 8px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .small {
+      min-height: 32px;
+    }
+
+    .large {
+      min-height: 92px;
+    }
+
+    .tall {
+      min-height: 138px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .row.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mobile-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+
+    .desktop-header {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .desktop-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .form-lines {
+      display: grid;
+      gap: 8px;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ABC Fitness Studio Wireframes</h1>
+    <p>Low-fidelity mobile and desktop layouts for the final website.</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">Mobile Wireframes</h2>
+    <section class="wireframe-grid">
+      <article class="wireframe-card">
+        <h3 class="label">Mobile Home Page</h3>
+        <div class="box">Logo + Site Name</div>
+        <div class="mobile-nav">
+          <div class="box small">Home</div>
+          <div class="box small">Gallery</div>
+          <div class="box small">About</div>
+          <div class="box small">Events</div>
+        </div>
+        <div class="box large">Hero Title + Intro Text</div>
+        <div class="box">Training Programs Card</div>
+        <div class="box">Personal Coaching Card</div>
+        <div class="box">Member Community Card</div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+
+      <article class="wireframe-card">
+        <h3 class="label">Mobile Gallery Page</h3>
+        <div class="box">Logo + Site Name</div>
+        <div class="mobile-nav">
+          <div class="box small">Home</div>
+          <div class="box small">Gallery</div>
+          <div class="box small">About</div>
+          <div class="box small">Events</div>
+        </div>
+        <div class="box">Page Title</div>
+        <div class="box tall">Service Card + Add to Cart</div>
+        <div class="box tall">Service Card + Add to Cart</div>
+        <div class="box">View Cart Button</div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+
+      <article class="wireframe-card">
+        <h3 class="label">Mobile About/Contact Page</h3>
+        <div class="box">Logo + Site Name</div>
+        <div class="mobile-nav">
+          <div class="box small">Home</div>
+          <div class="box small">Gallery</div>
+          <div class="box small">About</div>
+          <div class="box small">Events</div>
+        </div>
+        <div class="box large">About Us Text</div>
+        <div class="form-lines">
+          <div class="box small">Name Input</div>
+          <div class="box small">Email Input</div>
+          <div class="box large">Message Textarea</div>
+          <div class="box small">Submit Button</div>
+        </div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+
+      <article class="wireframe-card">
+        <h3 class="label">Mobile Classes/Events Page</h3>
+        <div class="box">Logo + Site Name</div>
+        <div class="mobile-nav">
+          <div class="box small">Home</div>
+          <div class="box small">Gallery</div>
+          <div class="box small">About</div>
+          <div class="box small">Events</div>
+        </div>
+        <div class="box large">Events Hero Section</div>
+        <div class="box">Class Card</div>
+        <div class="box">Challenge Card</div>
+        <div class="box">Testimonials Card</div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+    </section>
+
+    <h2 class="section-title">Desktop Wireframes</h2>
+    <section class="wireframe-grid">
+      <article class="wireframe-card desktop-card">
+        <h3 class="label">Desktop Home Page</h3>
+        <div class="desktop-header">
+          <div class="box">Logo + Name</div>
+          <div class="desktop-nav">
+            <div class="box small">Home</div>
+            <div class="box small">Gallery</div>
+            <div class="box small">About</div>
+            <div class="box small">Events</div>
+          </div>
+        </div>
+        <div class="box large">Wide Hero Section</div>
+        <div class="row">
+          <div class="box tall">Training Programs</div>
+          <div class="box tall">Personal Coaching</div>
+          <div class="box tall">Community</div>
+        </div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+
+      <article class="wireframe-card desktop-card">
+        <h3 class="label">Desktop Gallery Page</h3>
+        <div class="desktop-header">
+          <div class="box">Logo + Name</div>
+          <div class="desktop-nav">
+            <div class="box small">Home</div>
+            <div class="box small">Gallery</div>
+            <div class="box small">About</div>
+            <div class="box small">Events</div>
+          </div>
+        </div>
+        <div class="box">Page Title</div>
+        <div class="row">
+          <div class="box tall">Service Card</div>
+          <div class="box tall">Service Card</div>
+          <div class="box tall">Service Card</div>
+        </div>
+        <div class="box">View Cart Button + Modal Placeholder</div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+
+      <article class="wireframe-card desktop-card">
+        <h3 class="label">Desktop About/Contact Page</h3>
+        <div class="desktop-header">
+          <div class="box">Logo + Name</div>
+          <div class="desktop-nav">
+            <div class="box small">Home</div>
+            <div class="box small">Gallery</div>
+            <div class="box small">About</div>
+            <div class="box small">Events</div>
+          </div>
+        </div>
+        <div class="row two">
+          <div class="box tall">About Us Text</div>
+          <div class="box tall">Contact Form</div>
+        </div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+
+      <article class="wireframe-card desktop-card">
+        <h3 class="label">Desktop Classes/Events Page</h3>
+        <div class="desktop-header">
+          <div class="box">Logo + Name</div>
+          <div class="desktop-nav">
+            <div class="box small">Home</div>
+            <div class="box small">Gallery</div>
+            <div class="box small">About</div>
+            <div class="box small">Events</div>
+          </div>
+        </div>
+        <div class="box large">Events Intro Section</div>
+        <div class="row">
+          <div class="box tall">Class Card</div>
+          <div class="box tall">Challenge Card</div>
+          <div class="box tall">Testimonials</div>
+        </div>
+        <div class="box">Footer + Subscribe Form</div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
