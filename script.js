@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var subscribeButtons = document.querySelectorAll(".subscribe-button");
+  var subscribeForms = document.querySelectorAll(".subscribe-form");
   var addToCartButtons = document.querySelectorAll(".add-to-cart-button");
   var viewCartButton = document.getElementById("view-cart-button");
   var modalClearCartButton = document.getElementById("modal-clear-cart-button");
@@ -71,9 +71,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  subscribeButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
+  subscribeForms.forEach(function (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
       alert("Thank you for subscribing.");
+      form.reset();
     });
   });
 
@@ -107,6 +109,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (modalProcessOrderButton) {
     modalProcessOrderButton.addEventListener("click", function () {
+      if (getCartItems().length === 0) {
+        alert("Your order has already been processed.");
+        return;
+      }
+
       clearCartItems();
       renderCart();
       alert("Thank you for your order.");
