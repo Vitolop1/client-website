@@ -56,7 +56,13 @@
     }
 
     .desktop-card {
-      min-height: 420px;
+      min-height: 340px;
+    }
+
+    .desktop-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
     }
 
     .label {
@@ -106,17 +112,29 @@
       gap: 5px;
     }
 
-    .desktop-header {
+    .desktop-card .desktop-header {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: minmax(150px, 1fr) minmax(420px, 3fr);
       gap: 10px;
       margin-bottom: 10px;
     }
 
-    .desktop-nav {
+    .desktop-card .desktop-nav {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 8px;
+    }
+
+    .desktop-card .box {
+      font-size: 14px;
+    }
+
+    .desktop-card .row {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .desktop-card .row.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .form-lines {
@@ -139,7 +157,7 @@
 
   <main>
     <h2 class="section-title">Mobile Wireframes</h2>
-    <section class="wireframe-grid">
+    <section class="desktop-grid">
       <article class="wireframe-card">
         <h3 class="label">Mobile Home Page</h3>
         <div class="box">Logo + Site Name</div>
