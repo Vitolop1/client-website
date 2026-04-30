@@ -32,7 +32,7 @@
         <h3>Mountain Mug Set</h3>
         <p>A cozy ceramic mug set inspired by the Blue Ridge area.</p>
         <p class="price">$24.99</p>
-        <button class="add-to-cart-button" type="button">Add to Cart</button>
+        <button class="add-to-cart-button" type="button" data-name="Mountain Mug Set" data-price="24.99">Add to Cart</button>
       </article>
 
       <article class="card">
@@ -40,7 +40,7 @@
         <h3>Custom Gift Basket</h3>
         <p>A personalized basket with snacks, candles, and small gifts.</p>
         <p class="price">$39.99</p>
-        <button class="add-to-cart-button" type="button">Add to Cart</button>
+        <button class="add-to-cart-button" type="button" data-name="Custom Gift Basket" data-price="39.99">Add to Cart</button>
       </article>
 
       <article class="card">
@@ -48,13 +48,29 @@
         <h3>Hand-Poured Candle</h3>
         <p>A clean, simple candle made for relaxing spaces at home.</p>
         <p class="price">$16.99</p>
-        <button class="add-to-cart-button" type="button">Add to Cart</button>
+        <button class="add-to-cart-button" type="button" data-name="Hand-Poured Candle" data-price="16.99">Add to Cart</button>
       </article>
   </section>
 
   <section class="gallery-actions" aria-label="Cart actions">
+    <button id="view-cart-button" type="button">View Cart</button>
     <button id="clear-cart-button" class="secondary-button" type="button">Clear Cart</button>
     <button id="process-order-button" type="button">Process Order</button>
+  </section>
+
+  <section id="cart-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Shopping Cart</h2>
+        <button id="close-cart-button" class="icon-button" type="button" aria-label="Close cart">X</button>
+      </div>
+      <div id="cart-items"></div>
+      <p id="cart-total" class="cart-total"></p>
+      <div class="gallery-actions">
+        <button id="modal-clear-cart-button" class="secondary-button" type="button">Clear Cart</button>
+        <button id="modal-process-order-button" type="button">Process Order</button>
+      </div>
+    </div>
   </section>
 </main>
 
